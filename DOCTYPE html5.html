@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مقالة عن البيئة</title>
+    <style>
+        body { 
+            font-family: 'Arial', sans-serif;
+            background-color: #e0f7fa;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            font-size: 36px;
+            color: #00796b;
+            text-align: center;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+        h2 {
+            font-size: 28px;
+            color: #004d40;
+            text-transform: uppercase;
+            border-bottom: 2px solid #004d40;
+            padding-bottom: 10px;
+        }
+        p {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .article {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+        }
+        .btn {
+            background-color: #009688;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 5px;
+            transition: background-color 0.3s;
+            display: inline-block;
+        }
+        .btn:hover {
+            background-color: #00796b;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>أهمية حماية البيئة</h1>
+    <div class="article">
+        <div class="image-container">
+            <img src="image (24).png" alt="حماية البيئة">
+        </div>
+        <h2>1. أهمية البيئة:</h2>
+        <p>تعتبر البيئة هي الإطار الذي يعيش فيه الكائنات الحية، وتشمل كل ما يحيط بنا من الهواء، والماء، والتربة، والنباتات، والحيوانات. إن البيئة هي مصدر حياتنا، فهي تزودنا بالموارد الأساسية مثل الماء النظيف، والغذاء، والهواء النقي. لكن مع تزايد الأنشطة البشرية، تتعرض البيئة لمخاطر كبيرة تهدد توازنها وسلامتها.</p>
+        
+        <h2>2. التحديات التي تواجه البيئة:</h2>
+        <p>التلوث يعد من أخطر التهديدات التي تواجه البيئة. التلوث الهوائي والمائي والتربة يؤثر سلباً على صحة الكائنات الحية. المواد الكيميائية والنفايات الناتجة عن الصناعات تعتبر من المصادر الرئيسية للتلوث.</p>
+
+        <h2>3. كيفية حماية البيئة:</h2>
+        <p>من المهم أن نزيد من وعي الناس حول أهمية البيئة وكيفية الحفاظ عليها. التعليم هو المفتاح لتغيير سلوك الأفراد تجاه البيئة.</p>
+
+        <h2>الخاتمة:</h2>
+        <p>إن حماية البيئة هي مسؤولية جماعية تتطلب تعاون الجميع. علينا أن نعمل معًا لضمان أن تكون بيئتنا نظيفة وصحية للأجيال القادمة. فلنكن جميعًا حراسًا للبيئة.</p>
+        
+        <div class="buttons">
+            <a href="https://wa.me/201099690137" class="btn">تواصل معنا</a>
+            <a href="#" class="btn" onclick="copyAndShare()">شارك المقال</a>
+            <a href="https://ar.wikipedia.org/wiki/حماية البيئة" class="btn" target="_blank">تعلم أكثر</a>
+        </div>
+    </div>
+
+    <script>
+        function copyAndShare() {
+            const articleText = "أهمية حماية البيئة:\nتعتبر البيئة هي الإطار الذي يعيش فيه الكائنات الحية، وتشمل كل ما يحيط بنا من الهواء، والماء، والتربة، والنباتات، والحيوانات..."; // تأكد من كتابة النص بوضوح
+            navigator.clipboard.writeText(articleText).then(function() {
+                window.open("https://wa.me/?text=" + encodeURIComponent(articleText), "_blank");
+            }).catch(function(err) {
+                console.error('فشل النسخ', err);
+            });
+        }
+    </script>
+</body>
+</html>
